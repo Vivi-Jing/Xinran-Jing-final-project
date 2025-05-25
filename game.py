@@ -12,7 +12,7 @@ class Player:
     def gain_exp(self, amount):
         self.exp += amount
         print(f"[EXP +{amount}] Current EXP:{self.exp}/{self.exp_to_level}")
-        while self.exp >= self.exp_to_level and self.level < 5:
+        while self.exp >= self.exp_to_level and self.level < 3:
             self.level_up()
 
     def level_up(self):
